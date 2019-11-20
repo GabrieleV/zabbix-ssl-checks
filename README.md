@@ -1,6 +1,18 @@
 # zabbix-ssl #
 Zabbix check SSL certificates
 
+## Notes
+ssl-tls.check has been patched to work wth Openssl static build supporting -ssl3.
+
+See https://github.com/drwetter/testssl.sh
+
+## TODO
+
+* Templates need to be reviewed.
+* Debian package not for SNI
+
+## Description
+
 We have to different ways to check for ssl certificates
 
 1. If you have only one certificate per IP address, use the standard 

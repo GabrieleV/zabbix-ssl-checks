@@ -1,0 +1,10 @@
+Package: zabbix-ssl-check
+Version: 1.0.0-2019112001
+Section: net
+Priority: optional
+Architecture: all
+Depends: zabbix-server-mysql (>=4.0) | zabbix-server-pgsql (>=4.0) | zabbix-proxy-mysql (>=4.0) | zabbix-proxy-mysql (>=4.0)| zabbix-proxy-sqlite3 (>=4.0)
+Maintainer: Gabriele Vivinetto <gabriele.mailing@rvmgroup.it>
+Description: Zabbiz scripts to monitor SSL stuffs.
+ Monitor ssl stuffs for http, smtp, imap, ftp. Must be installed on server or proxies
+

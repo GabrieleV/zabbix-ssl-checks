@@ -1,7 +1,7 @@
 #!/bin/bash
 #
 # script: ssltls.check 
-# version: 1.0
+# version: 2.0
 # author: Simon Kowallik <sk simonkowallik.com>
 # description: 
 # license: GPL2
@@ -120,7 +120,7 @@ if [ $# -ne 3 ]; then
  exit 1
 fi
 
-LOC="en_GB.UTF8"
+LOC="en_US.UTF8"
 export LC_ALL=$LOC
 
 # assign arguments to variables
@@ -142,7 +142,7 @@ CHECK_TYPE=$3 # simple, lifetime, .., serial, .., issuer, ..
 # 
 echo_bin="/bin/echo"
 timeout_bin="/usr/bin/timeout"
-OPENSSL="/usr/bin/openssl" # path to openssl binary
+OPENSSL="/usr/lib/zabbix/externalscripts/openssl.Linux.$(uname -m)" # path to openssl binary
 TIMEOUT=10 # connect timeout in seconds
 OPENSSL_PROTOS="smtp pop3 imap ftp xmpp" # which protocols are suppored by openssl for STARTTLS handshakes
 

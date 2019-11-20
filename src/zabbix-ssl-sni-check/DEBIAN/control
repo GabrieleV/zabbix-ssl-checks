@@ -1,0 +1,10 @@
+Package: zabbix-apt
+Version: 1.0.0-2019071102
+Section: net
+Priority: optional
+Architecture: all
+Depends: zabbix-agent (>=4.0)
+Maintainer: Gabriele Vivinetto <gabriele.mailing@rvmgroup.it>
+Description: Zabbiz agent scripts to monitor APT updates
+ These scripts monitor APT updates
+
