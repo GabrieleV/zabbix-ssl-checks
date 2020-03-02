@@ -120,7 +120,7 @@ if [ $# -ne 3 ]; then
  exit 1
 fi
 
-OPENSSL_CONF=/etc/ssl/
+export OPENSSL_CONF=/etc/ssl/
 LOC="en_US.UTF8"
 export LC_ALL=$LOC
 
