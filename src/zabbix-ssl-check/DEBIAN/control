@@ -1,5 +1,5 @@
 Package: zabbix-ssl-check
-Version: 1.0.0-2019112001
+Version: 1.0.0-2020030101
 Section: net
 Priority: optional
 Architecture: all

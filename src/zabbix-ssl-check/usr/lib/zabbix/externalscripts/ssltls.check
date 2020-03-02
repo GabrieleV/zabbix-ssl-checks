@@ -1,7 +1,7 @@
 #!/bin/bash
 #
 # script: ssltls.check 
-# version: 2.0
+# version: 2.1
 # author: Simon Kowallik <sk simonkowallik.com>
 # description: 
 # license: GPL2
@@ -120,6 +120,7 @@ if [ $# -ne 3 ]; then
  exit 1
 fi
 
+OPENSSL_CONF=/etc/ssl/
 LOC="en_US.UTF8"
 export LC_ALL=$LOC
 
